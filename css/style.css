@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  color: black;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+/*===================
+TYPOGRPHY
+=====================*/
+
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 600;
+}
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin-top: 1em;
+}
+span {
+  font-weight: 600;
+}
+
+h2 {
+  color: brown;
+  font-size: 1.65em;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+}
+
+h4 {
+  color: darkred;
+
+  margin-top: 0.35em;
+  margin-left: 2rem;
+  margin-bottom: 0px;
+}
+.nutrition-values {
+  color: brown;
+  font-weight: 600;
+}
+/*===================
+LAYOUT
+=====================*/
+.recipe-container {
+  margin: auto;
+}
+
+.recipe-content {
+  padding: 0 3em;
+}
+
+.recipe-img {
+  background-color: yellow;
+  background-image: url(../images/image-omelette.jpeg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.recipe-prep-time {
+  background-color: #f8f8f8;
+  width: 100%;
+  margin: 2em auto;
+  padding: 0.5rem 0;
+}
+.recipe-ingredients {
+  border-bottom: lightgrey solid 1px;
+  padding-bottom: 1.5rem;
+}
+
+.recipe-instructions {
+  border-bottom: lightgrey solid 1px;
+}
+
+.recipe-nutrition {
+  padding-bottom: 2rem;
+}
+
+/*================
+LISTS
+==================*/
+
+ul.prep-time-list {
+  margin-top: 0.35rem;
+  padding-left: 3.25rem;
+}
+ul.ingedient-list {
+  padding-left: 1.35rem;
+}
+
+ul.prep-time-list li,
+ul.ingedient-list li {
+  padding: 0.2rem 0.5rem;
+}
+
+.instructions-list {
+  padding-left: 1.15rem;
+}
+.instructions-list li {
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+ul.nutrition-list {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+ul.nutrition-list li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid lightgray;
+  padding-left: 20px;
+  float: left;
+  display: inline;
+  width: 40%;
+}
+
+ul.nutrition-list li:nth-last-child(2),
+ul.nutrition-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 3em;
+}
+
+/*==========================
+MEDIA QUERY for deskctop size
+=============================*/
+@media (min-width: 600px) {
+  body {
+    background-color: bisque;
+  }
+
+  .recipe-container {
+    width: 80%;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .recipe-img {
+    flex-basis: auto;
+    border-radius: 20px;
+    padding: 50px;
+    min-width: 0;
+    min-height: 0;
+    height: 150px;
+    margin: 30px;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .recipe-container {
+    width: 600px;
+  }
+}
